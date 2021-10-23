@@ -1,0 +1,1 @@
+module.exports.auth_route = require('./auth_route');
