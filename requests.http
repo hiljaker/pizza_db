@@ -1,0 +1,47 @@
+### Login
+POST http://localhost:9000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hilmo",
+    "password": "mantab"
+}
+
+### Signup
+POST http://localhost:9000/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hilmawan",
+    "password": "zaky"
+}
+
+### Keep Login
+GET http://localhost:9000/keeploggedin HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImhpbG1vIiwiaWF0IjoxNjM1MzUwODEzLCJleHAiOjE2MzU0MzcyMTN9.HkXKZ7MIRIks9BTEuzks7OZZnpVCYXEdX7rD27obMKk
+
+### Users
+GET http://localhost:9000/users/3 HTTP/1.1
+Content-Type: application/json
+
+### Products
+GET http://localhost:9000/products/ HTTP/1.1
+Content-Type: application/json
+
+### Add Product to Cart
+POST  http://localhost:9000/addtocart/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "product_id": 6,
+    "quantity": 2
+}
+
+### Get Cart Data
+GET http://localhost:9000/getcart/3 HTTP/1.1
+Content-Type: application/json
+
+### Delete product from cart
+DELETE  http://localhost:9000/deletefromcart/4/3 HTTP/1.1
+Content-Type: application/json
